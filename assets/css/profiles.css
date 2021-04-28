@@ -1,0 +1,110 @@
+.profile-head {
+  width: 100%;
+  min-height: 16vh;
+  margin-top: 63px;
+  background: linear-gradient(107deg, rgb(85,157,235), rgb(126,64,228));
+}
+
+.profile-heading {
+  font-size: 55px;
+  color: #ffff;
+  padding-left: 88px;
+  padding-top: 20px;
+}
+
+.pro-sec1 {
+  width: 100%;
+  min-height: 120vh;
+  padding-top: 50px;
+}
+
+.profile-img {
+  width: 70%;
+}
+
+.name-heading {
+  font-size: 42px;
+  margin-top: 10px;
+}
+
+.dest-heading {
+  font-size: 20px;
+  color: #3f9cf8;
+}
+
+.heading1 {
+  font-size: 20px;
+}
+
+.pro-icon {
+  color: rgb(35,134,234);
+  margin-right: 30px;
+  font-size: 30px;
+}
+
+.intro-heading {
+  font-size: 46px;
+  color: rgb(58,62,65);
+}
+
+.pro-para {
+  padding-left: 50px;
+  font-size: 18px;
+  color: rgb(146,152,159);
+}
+
+.pro-para2 {
+  font-size: 18px;
+  color: rgb(146,152,159);
+}
+
+.cus-review {
+  background: #eeeaea;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 26px;
+  box-shadow: 4px 6px 11px rgb(64,70,75);
+}
+
+.review-para {
+  font-size: 23px;
+  color: rgb(134,135,136);
+  font-family: 'Architects Daughter', cursive;
+  text-align: center;
+}
+
+.review-heading {
+  font-size: 30px;
+  padding-bottom: 10px;
+  font-family: Andika, sans-serif;
+}
+
+#slides1 {
+  min-height: 320px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  transition: opacity -6.9s ease;
+}
+
+.verify-span {
+  margin-left: 10px;
+  font-size: 15px;
+  color: rgb(7,197,38);
+}
+
+@media (max-width: 990px) {
+  .review-para {
+    font-size: 15px;
+  }
+  .review-heading {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .profile-heading {
+    font-size: 34px;
+  }
+}

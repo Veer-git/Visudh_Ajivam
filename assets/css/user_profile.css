@@ -1,0 +1,51 @@
+.back-head {
+  width: 100%;
+  min-height: 38vh;
+  background: linear-gradient(83deg, var(--blue) 8%, var(--indigo) 100%);
+}
+
+#pro-con {
+  z-index: 100;
+  margin-top: -72px;
+  background: rgb(246,251,254);
+  box-shadow: 5px 8px 20px 0px rgba(33,37,41,0.8);
+  margin-bottom: 100px;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.pro-head {
+  font-size: 41px;
+  margin: 26px;
+}
+
+.info-heading {
+  color: rgb(184,186,188);
+  font-size: 20px;
+  margin: 26px;
+}
+
+.detail-heading {
+  font-size: 20px;
+  margin-left: 60px;
+  color: rgb(107,108,109);
+}
+
+.details_para {
+  font-size: 18px;
+  color: rgb(136,138,140);
+  margin-left: 72px;
+}
+
+.user-pro-heading {
+  padding-top: 116px;
+  padding-left: 45px;
+  font-size: 50px;
+  color: #ffff;
+}
+
+@media (max-width: 400px) {
+  .user-pro-heading {
+    font-size: 37px;
+  }
+}

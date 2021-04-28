@@ -1,0 +1,84 @@
+.sec-head {
+  width: 100%;
+  min-height: 32vh;
+  background: linear-gradient(107deg, rgb(85,157,235), rgb(126,64,228));
+}
+
+.sec-head-heading {
+  padding-top: 104px;
+  padding-left: 45px;
+  font-size: 50px;
+  color: #ffff;
+}
+
+.user-sec-2 {
+  width: 100%;
+  min-height: 120vh;
+}
+
+.col.my-acc {
+}
+
+.col.user-info {
+  box-shadow: 0px 9px 13px 0px rgba(33,37,41,0.88);
+  margin-left: 30px;
+  border-radius: 25px;
+  padding: 20px;
+  background: rgb(246,251,254);
+  margin-top: 50px;
+}
+
+.user-info-head {
+  color: rgb(184,186,188);
+}
+
+.info-head {
+  margin-top: 5px;
+  font-size: 20px;
+  margin-left: 10px;
+  color: rgb(107,108,109);
+}
+
+.info-para {
+  font-size: 18px;
+  color: rgb(136,138,140);
+  margin-left: 32px;
+}
+
+@media (max-width: 600px) {
+  .user-info-head {
+    font-size: 25px;
+  }
+  .info-head, .info-para{
+    font-size: 15px;
+  }
+  .col.user-info {
+    max-width: 343px;
+  }
+  .user-sec-2 {
+    min-height: 190vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .sec-head-heading {
+    font-size: 35px;
+  }
+  .sec-head {
+    min-height: 23vh;
+  }
+  .user-info-head {
+    font-size: 20px;
+  }
+  .info-head, .info-para{
+    font-size: 15px;
+    margin-right: 53px;
+  }
+  .col.user-info {
+    margin-left: 25px;
+    max-width: 261px;
+  }
+  .user-sec-2 {
+    min-height: 317vh;
+  }
+}

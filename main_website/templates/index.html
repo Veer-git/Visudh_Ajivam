@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>visudhajivam</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akaya+Telivigala">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Footer-Dark.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <section id="home">
+        <nav class="navbar navbar-light navbar-expand-md shadow" style="background: #ffffff;position: fixed;width: 100%;">
+            <div class="container-fluid"><a class="navbar-brand" style="display: none;" href="#"><img src="{% static 'img/logo.png' %}" width="250px"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-end" id="navcol-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" style="margin: 0px;"><a class="nav-link active" data-bss-hover-animate="bounce" href="#home" style="color: rgb(0,0,0);font-size: 20px;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-bss-hover-animate="bounce" href="#sec-3" style="color: rgb(0,0,0);font-size: 20px;">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-bss-hover-animate="bounce" href="#footer1" style="border-color: rgba(0,0,0,0.9);color: rgb(0,0,0);font-size: 20px;">Contact Us</a></li>
+                    </ul>
+                    <div class="dropdown"><a aria-expanded="false" data-toggle="dropdown" href="#" style="color: rgb(0,0,0);font-size: 20px;">Login</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#" style="font-size: 20px;">Customer Login</a>
+                        <!-- <a class="dropdown-item" href="#" style="font-size: 20px;">Employee Login</a> -->
+                        <a class="dropdown-item" href="business_login" style="font-size: 20px;">Medical Services<br> Providors Login</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div id="slide-1" style="background: url(&quot;{% static 'img/h1-slider-image-1.jpg' %}&quot;) center / cover no-repeat;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col d-flex justify-content-start">
+                                    <h2 class="display-3" data-aos="fade-right" data-aos-duration="700" style="color: rgb(33, 37, 41);">Welcome to</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" style="display: none;"><img data-aos="fade-up" data-aos-duration="700" data-aos-delay="400" id="slide-1-logo" src="{% static 'img/logo.png' %}"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
+                                    <p id="slide-1-p">We<strong>&nbsp;</strong>Providing High Quality Health Services<br></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="500" id="slide-1-imgcol"><img id="slide-1-img" src="{% static 'img/healthcare.png' %}"></div>
+                                <div class="col d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="600" id="slide-1-imgcol"><img id="slide-1-img" src="{% static 'img/healthcare%20(1).png' %}"></div>
+                                <div class="col d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="700" id="slide-1-imgcol"><img id="slide-1-img" src="{% static 'img/first-aid-kit.png' %}"></div>
+                                <div class="col d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="800" id="slide-1-imgcol"><img id="slide-1-img" src="{% static 'img/caduceus.png' %}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div id="slide-2" style="background: url(&quot;{% static 'img/h1-slider-image-3.jpg' %}&quot;) center / cover no-repeat;">
+                        <div class="container" style="padding-top: 100px;">
+                            <div class="row">
+                                <div class="col d-flex justify-content-start">
+                                    <h2 class="display-3 bounce animated" style="color: rgb(33, 37, 41);">We Have&nbsp; the</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="bounce animated">Finest Physicians</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" style="padding-left: 8px;">
+                                    <p class="bounce animated" id="slide-1-p">We are expert in the diagnosis and treatment<br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div id="slide-3" style="background: url(&quot;{% static 'img/h1-slider-image-2.jpg' %}&quot;) center / cover no-repeat;">
+                        <div class="container" style="padding-top: 100px;">
+                            <div class="row">
+                                <div class="col d-flex justify-content-start">
+                                    <h2 class="display-3 bounce animated" style="color: rgb(33, 37, 41);">Dedication</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="bounce animated" >And Commitment</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" style="padding-left: 8px;">
+                                    <p class="bounce animated" id="slide-1-p-1" style="font-size: 30px;padding-left: 8px;">We have 24*7 excellent customer support, Call or Mail us<br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+    <section id="sec-2">
+        <div class="container justify-content-center mt-5 pt-5">
+            <div class="row d-flex justify-content-center" style="margin-top: 100px;">
+                <div class="col"><img data-aos="fade-up" data-aos-duration="700" src="{% static 'img/unnamed.png' %}">
+                    <hr style="width: 700px;margin-left: -60px;background: #a9a7a7;">
+                </div>
+                <div class="col">
+                    <h1 class="display-4" data-aos="fade-right" data-aos-duration="450" data-aos-delay="450" style="font-size: 50px;">Provide High</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="450" data-aos-delay="550" style="font-size: 60px;color: rgb(82,85,88);">Quality Services</h1>
+                    <p data-aos="fade-right" data-aos-duration="450" data-aos-delay="650" ><br><strong>VISUDH AJIVAM PVT LTD</strong>&nbsp;is one of the best digital platform for health care services integrated with pharmacies, doctors, labtests, diagnosis centres across India to provide world class Healthcare facilities to individuals across the country.This platform is the fastest, cheapest, safestway for you and your loved ones for meeting your medical needs in terms of medicine, labtest and doctors availability at the right time at the best affordable price.We make sure that the quality of service you are getting is world class we give you this gurranty with every service you opt for online as well as offline.We are one stop solution for your problems.We are covering a wide range of products, test and doctors with speciality in different feilds to make the service wide and safest.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 data-aos="fade-up" data-aos-duration="450" data-aos-delay="450" style="margin-top: 20px;">About Us</h1>
+                    <hr data-aos="fade-right" data-aos-duration="450" data-aos-delay="650" style="background: #a9a7a7;">
+                </div>
+            </div>
+            <div class="row" style="margin: 30px;">
+                <div class="col-8">
+                    <h1 class="display-4" data-aos="fade-right" data-aos-duration="450" data-aos-delay="750" style="font-size: 50px;">Be Gentle</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="450" data-aos-delay="850" style="font-size: 60px;color: rgb(82,85,88);">With the Strongest</h1>
+                    <p data-aos="fade-right" data-aos-duration="450" data-aos-delay="950"><br>VISUDH AJIVAM PVT LTD is one of the best digital platform for health care services integrated with pharmacies, doctors, labtests, diagnosis centres across India to provide world class Healthcare facilities to individuals across the country.This platform is the fastest, cheapest, safestway for you and your loved ones for meeting your medical needs in terms of medicine, labtest and doctors availability at the right time at the best affordable price.We make sure that the quality of service you are getting is world class we give you this gurranty with every service you opt for online as well as offline.We are one stop solution for your problems.We are covering a wide range of products, test and doctors with speciality in different feilds to make the service wide and safest.<br><br></p>
+                </div>
+                <div class="col" data-aos="fade-left" data-aos-duration="450" data-aos-delay="950" style="background: url(&quot;{% static 'img/about-us-img-1.jpg' %}&quot;) center / cover no-repeat;">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-4">
+        <div class="container">
+            <div class="row" style="padding-top: 90PX;">
+                <div class="col">
+                    <div>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center"><a href="#"><img data-bss-hover-animate="bounce" src="{% static 'img/s1.png' %}" width="150px" height="120px"></a></div>
+                            </div>
+                            <div class="col-7">
+                                <h6><strong>BOOK APPOINTMENT</strong><br></h6>
+                                <p class="text-left">Set up an appointment, Call or Mail us.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center"><a href="#"><img data-bss-hover-animate="bounce" src="{% static 'img/s2.png' %}" width="150px"></a></div>
+                            </div>
+                            <div class="col-7">
+                                <h6><strong>BOOK LAB TEST</strong><br></h6>
+                                <p class="text-left">Set up an appointment, Call or Mail us.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center"><a href="#"><img data-bss-hover-animate="bounce" src="{% static 'img/s3.png' %}" width="150px"></a></div>
+                            </div>
+                            <div class="col-7">
+                                <h6><strong>DIAGNOSIS</strong><br></h6>
+                                <p class="text-left">Set up an appointment, Call or Mail us.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 70px;">
+                <div class="col">
+                    <div>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center"><a href="#"><img data-bss-hover-animate="bounce" src="{% static 'img/s4.png' %}" width="150px" height="150px"></a></div>
+                            </div>
+                            <div class="col-7">
+                                <h6><strong>BOOK APPOINTMENT</strong><br></h6>
+                                <p class="text-left">Set up an appointment, Call or Mail us.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center"><a href="#"><img data-bss-hover-animate="bounce" src="{% static 'img/s5.png' %}" width="150px"></a></div>
+                            </div>
+                            <div class="col-7">
+                                <h6><strong>BOOK LAB TEST</strong><br></h6>
+                                <p class="text-left">Set up an appointment, Call or Mail us.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center"><a href="#"><img data-bss-hover-animate="bounce" src="{% static 'img/s6.png' %}" width="150px"></a></div>
+                            </div>
+                            <div class="col-7">
+                                <h6><strong>DIAGNOSIS</strong><br></h6>
+                                <p class="text-left">Set up an appointment, Call or Mail us.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-8">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 data-aos="fade-up" data-aos-duration="450" data-aos-delay="450" style="margin-top: 20px;">Time Schedule</h1>
+                    <hr data-aos="fade-right" data-aos-duration="450" data-aos-delay="650" style="background: #a9a7a7;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" data-aos="fade" data-aos-duration="500" data-aos-delay="150">
+                    <div style="margin-top: 100px;">
+                        <div class="row" style="border-style: none;border-radius: 28px;overflow: hidden;">
+                            <div class="col" style="background: var(--blue);color: #fff;"><i class="fa fa-phone" style="font-size: 70px;margin-top: 20px;"></i>
+                                <h1>Emergency Cases<br></h1>
+                                <p><br>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation&nbsp;<br><br></p>
+                                <h1>+91 93049 70109<br></h1>
+                            </div>
+                            <div class="col" style="background: var(--info);color: #fff;"><i class="fa fa-calendar" style="font-size: 70px;margin-top: 20px;"></i>
+                                <h1>Doctor Timetable<br></h1>
+                                <p><br>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation&nbsp; Ut wisi enim ad minim veniam, quis laore nostrud exerci tation&nbsp;<br>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation&nbsp;<br><br><br></p>
+                            </div>
+                            <div class="col" style="background: var(--purple);color: #fff;"><i class="fa fa-hourglass-1" style="font-size: 70px;margin-top: 20px;"></i>
+                                <h1>Opening Hours<br></h1>
+                                <p style="font-size: 18px;">Monday - Friday&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;08:30am - 09:30pm</p>
+                                <hr>
+                                <p style="font-size: 18px;">Saturday - Sunday&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 09:00am - 06:00pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-6">
+        <div class="container">
+            <div class="row" style="padding-top: 100px;">
+                <div class="col">
+                    <div><img class="rounded-circle border" data-aos="fade" data-aos-duration="450" src="{% static 'img/doc1.png' %}" width="300px">
+                        <h1 class="text-center" data-aos="fade-right" data-aos-duration="450" data-aos-delay="450">Angela Adams</h1>
+                        <h4 class="text-center" data-aos="fade-right" data-aos-duration="450" data-aos-delay="550">General Physician</h4>
+                        <p class="text-center" data-aos="fade-right" data-aos-duration="450" data-aos-delay="650">General Practitioner is a medical doctor who treats all common medical conditions and refers patients to hospitals and other medical services for urgent and specialist treatment.<br></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div><img class="rounded-circle border" data-aos="fade" data-aos-duration="450" data-aos-delay="700" src="{% static 'img/doc2.png' %}" width="300px">
+                        <h1 class="text-center" data-aos="fade-right" data-aos-duration="450" data-aos-delay="800">Dr. Hajdenberg<br></h1>
+                        <h4 class="text-center" data-aos="fade-right" data-aos-duration="450" data-aos-delay="900">Psychiatrist<br></h4>
+                        <p class="text-center" data-aos="fade-right" data-aos-duration="450" data-aos-delay="1000">A neurologist is a medical doctor with specialized training in diagnosing, treating, and managing disorders of the brain and nervous system including, but not limited to, Alzheimer's disease, amyotrophic lateral sclerosis (ALS), concussion, epilepsy, migr.<br></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div><img class="rounded-circle border" data-aos="fade" data-aos-duration="450" data-aos-delay="1050" src="{% static 'img/doc3.png' %}" width="300px">
+                        <h1 class="text-center" data-aos="fade-right" data-aos-duration="450" data-aos-delay="1150">Dr. Jennifer E.<br></h1>
+                        <h4 class="text-center" data-aos="fade-right" data-aos-duration="450" data-aos-delay="1250">Pharmacy<br></h4>
+                        <p class="text-center" data-aos="fade-right" data-aos-duration="450" data-aos-delay="1350">We have a large variety of medicinal products. Easily available at your door step.&nbsp;<br>We have a large variety of medicinal products. Easily available at your door step.<br><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-7">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center" data-aos="fade" data-aos-duration="650" style="color: rgb(255,255,255);font-size: 42px;margin-top: 45px;font-family: Andika, sans-serif;">"Always laugh when you can, it is cheap medicine" - Lord Byron</h1>
+            </div>
+        </div>
+    </section>
+    <footer id="footer1" class="footer-dark">
+        <div id="footer-row" class="row">
+            <div class="col-4 col-md-6 item text" style="max-width: 405px;"><img style="display: none;" src="{% static 'img/logo.png' %}" width="300px">
+                <div style="margin-left: 26px;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-1"><i class="fa fa-map-marker" style="font-size: 37px;"></i></div>
+                        <div class="col-9">
+                            <p style="font-size: 16px;"><strong>&nbsp;Surya nagar road no-3 Bijulia talab road ward no -8 Ramgarh cantt Ramgarh Jharkhand 829122</strong></p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 24px;">
+                        <div class="col-1"><i class="fa fa-envelope-square" style="font-size: 37px;"></i></div>
+                        <div class="col-9">
+                            <p style="font-size: 16px;"><strong>&nbsp;&nbsp;&nbsp;vishudhajivam@gmail.com</strong><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-sm-6 col-md-3 item" style="max-width: 160px;">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Hopitality</a></li>
+                    <li><a href="#">Diagnosis</a></li>
+                    <li><a href="#">Labs</a></li>
+                </ul>
+            </div>
+            <div class="col-4 col-sm-6 col-md-3 item" style="max-width: 175px;">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="cnct" class="col-4" style="margin-bottom: 20px;">
+                <h3>Contact Us</h3><input type="email" id="email-input" placeholder="Enter email"><textarea style="color: rgb(154,153,153);background-color: #393b3b;margin-bottom: 15px;width: 100%;margin: 0 0 14px;padding: 11px 17px;font-family: inherit;font-size: 20px;line-height: 21px;font-weight: 300;border: 1px solid transparent;border-radius: 5px;outline: 0;-webkit-appearance: none;box-sizing: border-box;" placeholder="Message" rows="10"></textarea><button class="btn btn-primary" type="button">SUBMIT</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+        </div>
+        <p class="copyright">Visudh Ajivam© 2021</p>
+    </footer>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bs-init.j' %}s"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+
+</html>
