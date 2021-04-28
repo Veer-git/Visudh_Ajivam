@@ -74,7 +74,7 @@
             </div>
         </form>
         <form style="display: none;" id="for_pass">
-            <div class="container" id="con1" >
+            <div class="container con2" id="con1" >
                 <div class="form-row">
                     <div class="col">
                         <p>Please Enter Email Id</p>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="col" style="text-align: left; padding: 10px;"><a href="#asdfghjk" onclick="countdown();">Resend OTP</a></div>
+                    <div class="col" style="text-align: left; padding: 10px;"><a href="#asdfghjk" onclick="show()">Resend OTP</a></div>
                     <div class="col" id="resend" style="text-align: left; padding: 10px;"></div>
                 </div>
                 <div class="form-row" style="text-align: center;">
@@ -164,26 +164,14 @@
         function show() {
             document.getElementById("for_pass").style.display = "block";
             document.getElementById("upper_form").style.display = "none";
+            document.getElementById("new_pass").style.display = "none";
         }
         function subOTP() {
             document.getElementById("new_pass").style.display = "block";
             document.getElementById("for_pass").style.display = "none";
             let email= document.getElementById("PassEmail").value; 
-            alert("OTP sent to "+email);
-            
+            alert("OTP sent to "+email);    
         }
-        var timeLeft = 8;
-        function countdown() {
-            var elem = document.getElementById('resend');
-            var timerId = setInterval(countdown, 1000);
-            if (timeLeft === -1) {
-                clearTimeout(timerId);
-                elem.innerHTML ='otp sent'
-            } else {
-                elem.innerHTML = ' resending in '+ timeLeft + ' seconds';
-                timeLeft--;
-        }
-    }
     </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
