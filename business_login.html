@@ -98,8 +98,8 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="col" style="text-align: left; padding: 10px;"><a href="#asdfghjk" onclick="show()">Resend OTP</a></div>
-                    <div class="col" id="resend" style="text-align: left; padding: 10px;"></div>
+                    <div class="col" style="text-align: left; padding: 10px;" id="timer"></div>
+                    <div class="col" style="text-align: left; padding: 10px; display: none;" id="resend"><a href="#asdfghjk" onclick="show()">Resend OTP</a></div>
                 </div>
                 <div class="form-row" style="text-align: center;">
                     <div class="col">
@@ -161,7 +161,7 @@
         <p class="copyright">Visudh Ajivam© 2021</p>
     </footer>
     <script type="text/javascript">
-        function show() {
+        function show(){
             document.getElementById("for_pass").style.display = "block";
             document.getElementById("upper_form").style.display = "none";
             document.getElementById("new_pass").style.display = "none";
@@ -170,7 +170,24 @@
             document.getElementById("new_pass").style.display = "block";
             document.getElementById("for_pass").style.display = "none";
             let email= document.getElementById("PassEmail").value; 
-            alert("OTP sent to "+email);    
+            alert("OTP sent to "+email);
+            timer(); 
+        }
+        function timer(){
+            let timeLeft = 45; 
+            let elem = document.getElementById('timer');
+            let timerId = setInterval(countdown, 1000);       
+            function countdown() {            
+                if (timeLeft == -1) {
+                    clearTimeout(timerId);
+                    document.getElementById('resend').style.display="block";
+                    elem.style.display="none";
+                } else {
+                    elem.innerHTML ='    resend OTP in '+ timeLeft + ' seconds';
+                    console.log(timeLeft);
+                    timeLeft--;
+                }
+            }
         }
     </script>
     <script src="assets/js/jquery.min.js"></script>
