@@ -291,6 +291,6 @@ img {
   max-width: 100%;
 }
 
-#con1{
-  padding: 93px 93px;
+.con2{
+  padding: 93.5px 93.5px !important;
 }
