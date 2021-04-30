@@ -2,14 +2,14 @@
   width: 100%;
   min-height: 16vh;
   margin-top: 63px;
-  background: linear-gradient(107deg, rgb(85,157,235), rgb(126,64,228));
+  background: linear-gradient(107deg, rgb(85, 157, 235), rgb(126, 64, 228));
 }
 
 .profile-heading {
-  font-size: 55px;
+  font-size: 500%;
   color: #ffff;
-  padding-left: 88px;
-  padding-top: 20px;
+  padding-left: 10%;
+  padding-top: 10%;
 }
 
 .pro-sec1 {
@@ -37,25 +37,25 @@
 }
 
 .pro-icon {
-  color: rgb(35,134,234);
+  color: rgb(35, 134, 234);
   margin-right: 30px;
   font-size: 30px;
 }
 
 .intro-heading {
   font-size: 46px;
-  color: rgb(58,62,65);
+  color: rgb(58, 62, 65);
 }
 
 .pro-para {
   padding-left: 50px;
   font-size: 18px;
-  color: rgb(146,152,159);
+  color: rgb(146, 152, 159);
 }
 
 .pro-para2 {
   font-size: 18px;
-  color: rgb(146,152,159);
+  color: rgb(146, 152, 159);
 }
 
 .cus-review {
@@ -63,13 +63,13 @@
   padding: 20px;
   margin-top: 20px;
   border-radius: 26px;
-  box-shadow: 4px 6px 11px rgb(64,70,75);
+  box-shadow: 4px 6px 11px rgb(64, 70, 75);
 }
 
 .review-para {
   font-size: 23px;
-  color: rgb(134,135,136);
-  font-family: 'Architects Daughter', cursive;
+  color: rgb(134, 135, 136);
+  font-family: "Architects Daughter", cursive;
   text-align: center;
 }
 
@@ -83,14 +83,15 @@
   min-height: 320px;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   transition: opacity -6.9s ease;
 }
 
 .verify-span {
   margin-left: 10px;
   font-size: 15px;
-  color: rgb(7,197,38);
+  color: rgb(7, 197, 38);
 }
 
 @media (max-width: 990px) {
@@ -103,7 +104,6 @@
 }
 
 @media (max-width: 600px) {
-
   .profile-heading {
     font-size: 34px;
   }

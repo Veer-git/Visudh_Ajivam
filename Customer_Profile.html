@@ -127,9 +127,9 @@
     <section class="profile-head">
       <h1 class="display-2 profile-heading">Profiles &gt; Customer</h1>
     </section>
-    <section>
+    <section id="c_profile">
       <div class="container emp-profile">
-        <form method="post">
+        <form>
           <div class="row">
             <div class="col-md-4">
               <div class="profile-img">
@@ -138,217 +138,483 @@
                   Change Photo
                   <input type="file" name="file" />
                 </div>
+                <h4><b> Virendar Kumar</b></h4>
               </div>
             </div>
-            <form id="cust_pro">
-              <div class="col-md-6">
-                <div class="profile-head">
-                  <h5>Virendar Kumar</h5>
+            <div class="col-md-6">
+              <div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      id="home-tab"
+                      data-toggle="tab"
+                      href="#home1"
+                      role="tab"
+                      aria-controls="home"
+                      aria-selected="true"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="profile-tab"
+                      data-toggle="tab"
+                      href="#profile"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                      >Other Details</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <input
+                type="submit"
+                class="profile-edit-btn"
+                id="edtbtn"
+                name="btnAddMore"
+                value="Edit"
+                onclick="edit()"
+              />
+            </div>
 
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        id="home-tab"
-                        data-toggle="tab"
-                        href="#home1"
-                        role="tab"
-                        aria-controls="home"
-                        aria-selected="true"
-                        >About</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="profile-tab"
-                        data-toggle="tab"
-                        href="#profile"
-                        role="tab"
-                        aria-controls="profile"
-                        aria-selected="false"
-                        >Other Details</a
-                      >
-                    </li>
-                  </ul>
+            <div class="row"></div>
+            <div class="col-md-4"></div>
+            <div id="dtls" class="col-md-8">
+              <div class="tab-content profile-tab" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home1"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Father Name</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>FName</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Mother Name</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>MName</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>DOB</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>date</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Mobile</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>123 456 7890</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Email Id</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>email</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Adhar No.</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>123 456 7890</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Blood Group</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>A+</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Gender</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>male</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Marital Status</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>single</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-2">
-                <input
-                  type="submit"
-                  class="profile-edit-btn"
-                  id="edtbtn"
-                  name="btnAddMore"
-                  value="Edit Profile"
-                  onclick="edit()"
-                />
+                <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Profession</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>Web Developer and Designer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Annual Income</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>0r</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>No. of Family Members</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>4</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Disability</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>no</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Address</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>#,bengaluru</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>District</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>bengaluru</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>State</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>karnataka</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Country</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>India</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Pincode</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>560078</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4"></div>
-              <div class="col-md-8">
-                <div class="tab-content profile-tab" id="myTabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="home1"
-                    role="tabpanel"
-                    aria-labelledby="home-tab"
-                  >
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Father Name</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>FName</p>
-                      </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section style="display: none" id="edit_pro">
+      <div class="container emp-profile">
+        <form>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="profile-img">
+                <img src="assets/img/doc1.png" alt="" />
+                <div class="file btn btn-lg btn-primary" id="chngbtn">
+                  Change Photo
+                  <input type="file" name="file" />
+                </div>
+                <div>
+                  <input class="name" type="text" placeholder="Full Name" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      id="home-tab"
+                      data-toggle="tab"
+                      href="#home2"
+                      role="tab"
+                      aria-controls="home"
+                      aria-selected="true"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="profile-tab"
+                      data-toggle="tab"
+                      href="#profile1"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                      >Other Details</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-4"></div>
+            <div class="col-md-8" id="dtls">
+              <div class="tab-content profile-tab" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home2"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Father Name</label>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Mother Name</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>MName</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>DOB</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>date</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Mobile</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>123 456 7890</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Email Id</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>email</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Adhar No.</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>123 456 7890</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Blood Group</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>A+</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Gender</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>male</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Marital Status</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>single</p>
-                      </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="text" /></p>
                     </div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="profile"
-                    role="tabpanel"
-                    aria-labelledby="profile-tab"
-                  >
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Profession</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>Web Developer and Designer</p>
-                      </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Mother Name</label>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Annual Income</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>0r</p>
-                      </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="text" /></p>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>No. of Family Members</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>4</p>
-                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>DOB</label>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Disability</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>no</p>
-                      </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="date" /></p>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Address</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>#,bengaluru</p>
-                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Mobile</label>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>District</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>bengaluru</p>
-                      </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="number" /></p>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>State</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>karnataka</p>
-                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Email Id</label>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Country</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>India</p>
-                      </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="email" /></p>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Pincode</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>560078</p>
-                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Adhar No.</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="number" /></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Blood Group</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>
+                        <select class="name">
+                          <option>Select Blood Group</option>
+                          <option>Unknown</option>
+                          <option>A Positive</option>
+                          <option>A Negative</option>
+                          <option>B Positive</option>
+                          <option>B Negative</option>
+                          <option>AB Positive</option>
+                          <option>AB Negative</option>
+                          <option>O Positive</option>
+                          <option>O Negative</option>
+                        </select>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Gender</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>
+                        <select class="name">
+                          <option>Select Gender</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                        </select>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Marital Status</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>
+                        <select class="name">
+                          <option>Select Marital Status</option>
+                          <option>Single</option>
+                          <option>Married</option>
+                          <option>Widowed</option>
+                          <option>Separated</option>
+                          <option>Divorced</option>
+                        </select>
+                      </p>
                     </div>
                   </div>
                 </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile1"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Profession</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="text" /></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Annual Income</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="number" /></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>No. of Family Members</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="number" /></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Disability</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>
+                        <select class="name">
+                          <option>Select</option>
+                          <option>Yes</option>
+                          <option>No</option>
+                        </select>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Address</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p>
+                        <textarea
+                          class="name"
+                          id=""
+                          cols="30"
+                          rows="1"
+                        ></textarea>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>District</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="text" /></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>State</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="text" /></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Country</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="text" /></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Pincode</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p><input class="name" type="number" /></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <input
+                      type="submit"
+                      class="profile-submit-btn"
+                      id="sbmtbtn"
+                      name="btnAddMore"
+                      value="Submit"
+                      onclick="submit()"
+                    />
+                  </div>
+                </div>
               </div>
-            </form>            
+            </div>
           </div>
         </form>
       </div>
@@ -440,10 +706,14 @@
       <p class="copyright">Visudh Ajivam© 2021</p>
     </footer>
     <script type="text/javascript">
-      function edit(){
-            document.getElementById("edit_pro").style.display = "block";
-            document.getElementById("profile").style.display = "none";            
-        }
+      function edit() {
+        document.getElementById("edit_pro").style.display = "block";
+        document.getElementById("c_profile").style.display = "none";
+      }
+      function submit() {
+        document.getElementById("edit_pro").style.display = "none";
+        document.getElementById("c_profile").style.display = "block";
+      }
     </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
