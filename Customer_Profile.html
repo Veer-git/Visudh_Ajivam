@@ -706,6 +706,9 @@
       <p class="copyright">Visudh Ajivam© 2021</p>
     </footer>
     <script type="text/javascript">
+      document.getElementById("edtbtn").addEventListener("click", function(event){
+        event.preventDefault()
+      });
       function edit() {
         document.getElementById("edit_pro").style.display = "block";
         document.getElementById("c_profile").style.display = "none";
