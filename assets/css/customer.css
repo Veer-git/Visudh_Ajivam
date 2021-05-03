@@ -39,10 +39,15 @@ body {
   color: #0062cc;
 }
 .profile-edit-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;z-index: 1;
   border: none;
+  outline: none;
+  margin-top: 1rem;
   border-radius: 1.5rem;
   width: 50px;
-  padding: 2%;
+  padding: 0.5rem;
   font-weight: 600;
   color: #6b7177;
   cursor: pointer;
@@ -127,9 +132,6 @@ body {
   background-color: #0062cc;
 }
 
-#dtls {
-  margin-top: -25px;
-}
 
 #chngbtn:hover {
   cursor: pointer;
@@ -137,9 +139,11 @@ body {
 
 #home-tab {
   margin-right: -25px !important;
+  margin-bottom: 0.5rem;
 }
 
 .name {
   border-radius: 0.3rem;
+  border: 0.1rem solid #c7cafd;
   width: 200px;
 }
