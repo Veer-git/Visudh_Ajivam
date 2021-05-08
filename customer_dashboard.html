@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/custdash.css">
-
+   
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     
@@ -64,14 +64,15 @@
                 <h3>Pharmacy</h3>                    
                 <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
                     <div class="input-group">
-                      <input type="search" placeholder="Search" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                      <input type="search" placeholder="Search" onkeyup="searchFun()" id="searchid" aria-describedby="button-addon1" class="form-control border-0 bg-light">
                       <div class="input-group-append">
                         <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
                       </div>
                     </div>
                   </div>                 
             </div>
-         <form id="form1">         
+             <div id="MyTab">
+                 
           <div class="container Card">
                 <div>
                   <img class="Card-img-top" src="assets/img/Hospital.png" alt="Card image">
@@ -143,10 +144,10 @@
               <a href="#" class="btn btn-primary">Book Appointment</a>
             </div>
           </div>
-        </form>
+        
 
         
-        <form id="form2" style="display: none;">
+        
             <div class="container Card">
                 <div>
                   <img class="Card-img-top" src="assets/img/Hospital.png" alt="Card image">
@@ -169,8 +170,11 @@
                   <h3 style="margin-bottom: 20px;">4.5/5</h3>
                   <a href="#" class="btn btn-primary">Book Appointment</a>
                 </div>
-              </div>              
-        </form>
+              </div>      
+
+        
+    </div>
+    <div id="pagination-container" ></div>
 
         <!-- <div class="page_btn">
             <a href="#" onclick="show1()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
@@ -252,8 +256,44 @@
         </div>
         <p class="copyright">Visudh Ajivam© 2021</p>
     </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/jquery.simplePagination.min.js" integrity="sha512-J4OD+6Nca5l8HwpKlxiZZ5iF79e9sgRGSf0GxLsL1W55HHdg48AEiKCXqvQCNtA1NOMOVrw15DXnVuPpBm2mPg==" crossorigin="anonymous"></script>
+<script>
+          
+             var items= $("#MyTab");
+              var numItems = items.length;
+              var perPage = 3;
 
-    <script>
+              items.slice(perPage).hide();
+
+              $('#pagination-container').pagination({
+                  items: numItems,
+                  itemsOnPage : perPage,
+                  prevText : "<",
+                  nextText : ">",
+                  onPageClick : function (pageNumber){
+                  	var showFrom= perPage*( pageNumber -1);
+                  	var showTo = showFrom + perPage;
+                  	items.hide().slice(showFrom, showTo).show()
+                  } 
+              });
+        
+        function searchFun(){
+          let filter = document.getElementById('searchid').value.toUpperCase();
+          let mycontent =document.getElementById('MyTab');
+          
+           
+           let  div2 = mycontent.getElementsByClassName('Card')
+            for (i = 0; i < div2.length; i++) {
+                h4 = div2[i].getElementsByTagName("h4")[0];
+                txtValue = h4.textContent || h4.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    div2[i].style.display = "";
+                } else {
+                    div2[i].style.display = "none";
+                }
+            }
+
+        }
         // function show1(){
         //     document.getElementById("bt2").style.backgroundColor = "rgb(235, 235, 235)";
         //     document.getElementById("bt1").style.backgroundColor = "blue";
