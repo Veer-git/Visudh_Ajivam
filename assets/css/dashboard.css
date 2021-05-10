@@ -126,11 +126,6 @@ body{
     object-fit: cover ;
 }
 
-.page_btn{
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
- }
-
 .bt{
     color:black;
     /* background-color: #3c78e7; */
@@ -148,13 +143,11 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-    
-
-.page_btn a{
     color: black;
     padding-left: 2px;
     padding-right: 2px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
     
 .page_btn a:hover{
