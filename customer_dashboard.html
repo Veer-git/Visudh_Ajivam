@@ -45,7 +45,7 @@
                 <h1>Visudha Ajivam</h1>
             </div>
             <!-- <img src="assets/img/custdashboard.jpeg" alt="Doctor" style=" width:100%; height: 60vh;"> -->
-            <div style="position: absolute;bottom: 8px;left: 16px;width: 100%;">
+            <div style="position: absolute;bottom: 8px;left: 16px;width: 100%;" id="Div1">
                 <ul class="nav nav-tabs" style="border-bottom: unset;">
                     <li><a data-toggle="tab" href="#pharmacy" style="cursor: pointer;" class="active">Pharmacy</a></li>
                     <li><a data-toggle="tab" href="#labs">Labs and Diagnostic</a></li>
@@ -61,7 +61,9 @@
     <div class="tab-content">            
         <div id="pharmacy" class="tab-pane fade in active">
             <div class="Top">
-                <h3>Pharmacy</h3>                    
+                <div>
+                    <h3>Pharmacy</h3>                    
+                </div>
                 <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
                     <div class="input-group">
                       <input type="search" placeholder="Search" onkeyup="searchFun()" id="searchid" aria-describedby="button-addon1" class="form-control border-0 bg-light">
@@ -77,8 +79,8 @@
             <form id="form1">
 
                     <div class="container Card">
-                          <div>
-                            <img class="Card-img-top" src="assets/img/Hospital.png" alt="Card image">
+                          <div class="image">
+                            <img class="Card-img-top" src="assets/img/doc1.png" alt="Card image">
                           </div>
                       
                           <div class="Card-body">
@@ -101,7 +103,7 @@
                     </div>
                      
                     <div class="container Card">
-                          <div>
+                          <div class="image">
                             <img class="Card-img-top" src="assets/img/Hospital.png" alt="Card image">
                           </div>
                       
@@ -125,7 +127,7 @@
                     </div>
                               
                     <div class="container Card">
-                      <div>
+                      <div class="image">
                         <img class="Card-img-top" src="assets/img/Hospital.png" alt="Card image">
                       </div>
                   
@@ -149,7 +151,7 @@
                     </div> 
 
                     <div class="container Card">
-                          <div>
+                          <div class="image">
                             <img class="Card-img-top" src="assets/img/Hospital.png" alt="Card image">
                           </div>
                       
@@ -170,21 +172,118 @@
                             <h3 style="margin-bottom: 20px;">4.5/5</h3>
                             <a href="#" class="btn btn-primary">Book Appointment</a>
                           </div>
-                        </div>      
-          
+                        </div> 
+
+            </form>
+            <form id="form2" style="display: none;">
+
+                <div class="container Card">
+                      <div class="image">
+                        <img class="Card-img-top" src="assets/img/doc1.png" alt="Card image">
+                      </div>
                   
+                      <div class="Card-body">
+                          <div class="hsptl">
+                              <h4 style="margin-right: 2px;">eastHospital</h4>                    
+                              <h6 style="color:rgb(36, 184, 36);"><svg style="color: rgb(34, 180, 34);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                              <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                              </svg>Verified</h6 style="color: blue;">
+                          </div>
+                              
+                              <h6 style="color: #007bff;"><b>8:00 AM - 8:00 PM</b></h6>
+                              <p class="Card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe excepturi, quas</p>
+                      </div> 
+      
+                      <div class="ThirdDiv">
+                        <h6 style="color: grey;">Ratings</h6>
+                        <h3 style="margin-bottom: 20px;">4.5/5</h3>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                      </div>
+                </div>
+                 
+                <div class="container Card">
+                      <div class="image">
+                        <img class="Card-img-top" src="assets/img/Hospital.png" alt="Card image">
+                      </div>
+                  
+                      <div class="Card-body">
+                          <div class="hsptl">
+                              <h4 style="margin-right: 2px;">southHospital</h4>                    
+                              <h6 style="color:rgb(36, 184, 36);"><svg style="color: rgb(34, 180, 34);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                              <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                              </svg>Verified</h6 style="color: blue;">
+                          </div>
+                              
+                              <h6 style="color: #007bff;"><b>8:00 AM - 8:00 PM</b></h6>
+                              <p class="Card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe excepturi, quas</p>
+                      </div> 
+      
+                      <div class="ThirdDiv">
+                        <h6 style="color: grey;">Ratings</h6>
+                        <h3 style="margin-bottom: 20px;">4.5/5</h3>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                      </div>
+                </div>
+                          
+                <div class="container Card">
+                  <div class="image">
+                    <img class="Card-img-top" src="assets/img/Hospital.png" alt="Card image">
+                  </div>
               
-            </form>    
+                  <div class="Card-body">
+                      <div class="hsptl">
+                          <h4 style="margin-right: 2px;">northHospital</h4>                    
+                          <h6 style="color:rgb(36, 184, 36);"><svg style="color: rgb(34, 180, 34);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                          <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                          </svg>Verified</h6 style="color: blue;">
+                      </div>
+                          
+                          <h6 style="color: #007bff;"><b>8:00 AM - 8:00 PM</b></h6>
+                          <p class="Card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe excepturi, quas</p>
+                  </div> 
+      
+                  <div class="ThirdDiv">
+                    <h6 style="color: grey;">Ratings</h6>
+                    <h3 style="margin-bottom: 20px;">4.5/5</h3>
+                    <a href="#" class="btn btn-primary">Book Appointment</a>
+                  </div>
+                </div> 
+
+                <div class="container Card">
+                      <div class="image">
+                        <img class="Card-img-top" src="assets/img/Hospital.png" alt="Card image">
+                      </div>
+                  
+                      <div class="Card-body">
+                          <div class="hsptl">
+                              <h4 style="margin-right: 2px;">westHospital</h4>                    
+                              <h6 style="color:rgb(36, 184, 36);"><svg style="color: rgb(34, 180, 34);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                              <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                              </svg>Verified</h6 style="color: blue;">
+                          </div>
+                              
+                              <h6 style="color: #007bff;"><b>8:00 AM - 8:00 PM</b></h6>
+                              <p class="Card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe excepturi, quas</p>
+                      </div> 
+          
+                      <div class="ThirdDiv">
+                        <h6 style="color: grey;">Ratings</h6>
+                        <h3 style="margin-bottom: 20px;">4.5/5</h3>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                      </div>
+                    </div> 
+                    
+        </form>   
 
         </div>
 
         <div class="page_btn">
-            <a href="#" onclick="show1()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+            <a href="#Div1" onclick="show1()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
                 <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
               </svg></a>
-            <input id="bt1" class="bt" type="button" value="1" onclick="show1()">
-            <input id="bt2" class="bt" type="button" value="2" onclick="show2()">      
-            <a href="#" onclick="show2()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <a href="#Div1"id="bt1" class="bt" type="button" onclick="show1()">1</a>
+            <a href="#Div1"id="bt2" class="bt" type="button" onclick="show2()">2</a>                  
+            <a href="#Div1" onclick="show2()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
                 <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
               </svg></a>
         </div>
@@ -261,29 +360,29 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/jquery.simplePagination.min.js" integrity="sha512-J4OD+6Nca5l8HwpKlxiZZ5iF79e9sgRGSf0GxLsL1W55HHdg48AEiKCXqvQCNtA1NOMOVrw15DXnVuPpBm2mPg==" crossorigin="anonymous"></script>
 <script>          
                      
-        function searchFun(){          
+        function searchFun(){                    
           let filter = document.getElementById('searchid').value.toUpperCase();
-          let mycontent =document.getElementById('MyTab');
-          
-           
-           let  div2 = mycontent.getElementsByClassName('Card')
+          let mycontent =document.getElementById('MyTab');   
+          let  div2 = mycontent.getElementsByClassName('Card')
+          document.getElementById("form1").style.display = "block";
+          document.getElementById("form2").style.display = "block";
             for (i = 0; i < div2.length; i++) {
                 h4 = div2[i].getElementsByTagName("h4")[0];
-                txtValue = h4.textContent || h4.innerText;
+                txtValue = h4.textContent || h4.innerText;    
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
                     div2[i].style.display = "";
-                } else {
+                } else {                 
                     div2[i].style.display = "none";
                 }
-            }
-
+            }                    
         }
         
+                
         function show1(){
             document.getElementById("bt2").style.backgroundColor = "rgb(235, 235, 235)";
             document.getElementById("bt1").style.backgroundColor = "blue";
             document.getElementById("form1").style.display = "block";
-            document.getElementById("form2").style.display = "none";
+            document.getElementById("form2").style.display = "none";            
         }
         function show2(){
             document.getElementById("bt1").style.backgroundColor = "rgb(235, 235, 235)";

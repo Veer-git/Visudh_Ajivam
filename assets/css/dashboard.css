@@ -8,8 +8,9 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 0 1rem;
+    margin: 1rem 2rem;
 }
+
 
 .input-group{
     /* margin-bottom: 2px; */
@@ -60,8 +61,8 @@ body{
     box-shadow: none !important;
 }
 
-
-.Card{    
+.Card{
+    position: relative;   
     display: flex;
     background-color: #fff;
     flex-wrap: wrap;
@@ -70,6 +71,8 @@ body{
     margin: 1rem auto;
     max-width: 885px;
     height: auto;
+    animation-name: anim;
+    animation-duration: 4s;
 }
 
 .Card:hover{
@@ -95,11 +98,23 @@ body{
     max-width: 350px;
     height: auto;
 }
+
+.image{
+    /* border: 1px solid grey !important; */
+    /* border-radius: 10rem; */
+    width: 170px;
+    height: 170px;
+    padding: 1rem 0;
+    box-sizing: content-box;
+}
     
 .Card-img-top{
+    width: 100%;
+    height: 100%;
+    border: 2px solid grey !important ;
+    border-radius: 70% !important;
     object-fit: cover;
-    width: 220px;
-    height: 200px;
+    overflow: hidden;
 }
     
 .hsptl{
@@ -120,17 +135,16 @@ body{
     color: #3180d4 !important;
 }
 
-.Card image{
-    width: 100%;
-    height: auto;
-    object-fit: cover ;
-}
+
 
 .bt{
     color:black;
     /* background-color: #3c78e7; */
     margin: 0.5px ;
+    padding-left: 3px;
+    padding-right: 3px;
     border: none;
+    text-decoration: none !important;
 }
 
 .bt:hover{
@@ -154,7 +168,12 @@ body{
     color: #3c78e7;
     background-color: rgb(219, 219, 219);
 }
-    
+
+@keyframes anim {
+    0%   {left:200px; top:0px;}
+    25%  {left:0px; top:0px;}
+}
+
 @media (max-width:800px){
     .Card{
         display: flex;
