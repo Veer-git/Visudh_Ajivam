@@ -271,7 +271,8 @@
                         <h3 style="margin-bottom: 20px;">4.5/5</h3>
                         <a href="#" class="btn btn-primary">Book Appointment</a>
                       </div>
-                    </div> 
+                    </div>
+                    <div id="empty"></div> 
                     
         </form>   
 
@@ -365,16 +366,19 @@
           let mycontent =document.getElementById('MyTab');   
           let  div2 = mycontent.getElementsByClassName('Card')
           document.getElementById("form1").style.display = "block";
-          document.getElementById("form2").style.display = "block";
-            for (i = 0; i < div2.length; i++) {
+          document.getElementById("form2").style.display = "block";          
+            for (i = 0; i < div2.length; i++) {                
                 h4 = div2[i].getElementsByTagName("h4")[0];
                 txtValue = h4.textContent || h4.innerText;    
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    console.log('h3');
                     div2[i].style.display = "";
+                    document.getElementById('empty').style.display="none";                    
                 } else {                 
-                    div2[i].style.display = "none";
-                }
-            }                    
+                    div2[i].style.display = "none";                    
+                    document.getElementById('empty').innerHTML="No more Hospital available in this area.";                                                           
+                }                
+            }                                
         }
         
                 
