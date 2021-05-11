@@ -42,11 +42,6 @@ body{
     /* transition: width 0.4s linear; */
 }
 
-#button-addon1:hover{
-    background: #3c78e7 !important;
-    color: white !important;    
-}
-
 #button-addon1{
     font-size: medium !important;
     height: 40px !important;
@@ -59,6 +54,11 @@ body{
     color:#3c78e7 !important;    
     text-decoration:none !important;
     box-shadow: none !important;
+}
+
+#button-addon1:hover{
+    background: #3c78e7 !important;
+    color: white !important;    
 }
 
 .Card{
@@ -99,9 +99,7 @@ body{
     height: auto;
 }
 
-.image{
-    /* border: 1px solid grey !important; */
-    /* border-radius: 10rem; */
+.image{    
     width: 170px;
     height: 170px;
     padding: 1rem 0;
@@ -116,6 +114,7 @@ body{
     object-fit: cover;
     overflow: hidden;
 }
+
     
 .hsptl{
     display: flex;
@@ -138,8 +137,7 @@ body{
 
 
 .bt{
-    color:black;
-    /* background-color: #3c78e7; */
+    color:black;    
     margin: 0.5px ;
     padding-left: 3px;
     padding-right: 3px;
@@ -149,8 +147,7 @@ body{
 
 .bt:hover{
     color:#3c78e7 ;
-    background-color:rgb(219, 219, 219);
-    /* border: 0.5px solid #3c78e7; */
+    background-color:rgb(219, 219, 219);    
 }
 
 .page_btn{
