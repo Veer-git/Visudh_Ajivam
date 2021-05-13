@@ -174,10 +174,7 @@
                           </div>
                         </div> 
 
-            </form>
-            <form id="form2" style="display: none;">
-
-                <div class="container Card">
+                  <div class="container Card">
                       <div class="image">
                         <img class="Card-img-top" src="assets/img/doc1.png" alt="Card image">
                       </div>
@@ -361,22 +358,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/jquery.simplePagination.min.js" integrity="sha512-J4OD+6Nca5l8HwpKlxiZZ5iF79e9sgRGSf0GxLsL1W55HHdg48AEiKCXqvQCNtA1NOMOVrw15DXnVuPpBm2mPg==" crossorigin="anonymous"></script>
 <script>          
                      
-        function searchFun(){                    
+        function searchFun(){     
+          document.getElementById('empty').innerHTML=" ";               
           let filter = document.getElementById('searchid').value.toUpperCase();
           let mycontent =document.getElementById('MyTab');   
-          let  div2 = mycontent.getElementsByClassName('Card')
-          document.getElementById("form1").style.display = "block";
-          document.getElementById("form2").style.display = "block";          
+          let  div2 = mycontent.getElementsByClassName('Card');                    
             for (i = 0; i < div2.length; i++) {                
                 h4 = div2[i].getElementsByTagName("h4")[0];
                 txtValue = h4.textContent || h4.innerText;    
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    console.log('h3');
-                    div2[i].style.display = "";
-                    document.getElementById('empty').style.display="none";                    
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {                  
+                    div2[i].style.display = "";                                        
                 } else {                 
                     div2[i].style.display = "none";                    
-                    document.getElementById('empty').innerHTML="No more Hospital available in this area.";                                                           
+                    document.getElementById('empty').innerHTML="No Hospitals available in this area.";                                                           
                 }                
             }                                
         }
