@@ -44,11 +44,11 @@
     <div class="grid-container">
       <div class="Div1">Your Appointments</div>
       <div class="Div2">        
-        <div class="A_tab Active"><div><a class="Ancr-tb" href="#">Appointments</a></div></div>                  
+        <div class="A_tab Active"><a class="Ancr-tb" href="#">Appointments</a></div>                  
         <div class="horz-Seprt"></div>
-        <div class="A_tab"><div><a class="Ancr-tb" href="#">Payment</a></div></div>      
+        <div class="A_tab"><a class="Ancr-tb" href="#">Payment</a></div>      
         <div class="horz-Seprt"></div>
-        <div class="A_tab"><div><a class="Ancr-tb" href="#">History</a></div></div>
+        <div class="A_tab"><a class="Ancr-tb" href="#">History</a></div>
       </div>
       
       <div class="Div3">
@@ -56,10 +56,10 @@
           <div class="card C1">
             <div>
               <a href="#" class="Close">x<span class="tooltiptext">Cancel</span></a>
-              <div class="L1">
+              <div class="L1" >
                 <p class="Hname">Hospital Name</p>
                 <p class="SH">02:00-03:00 PM 05/06/2021</p>                                  
-              </div>         
+              </div>              
               <div class="L2" >               
                 <div class="row">
                   <div class="col-md-4">
@@ -101,10 +101,64 @@
                     <a href="#" style="color: rgb(71, 69, 204); font-size: 20px;">Visit Profile</a>
                   </div>                                
                 </div>
-                <div style="text-align: center;">
-                  <i class="fas fa-angle-up rotate-icon Collapse" data-bss-hover-animate="bounce" onclick="hide()"></i>
-                </div>                    
+                <div class="Col" style="text-align: center;">
+                  <i class="fas fa-angle-up rotate-icon Collapse" data-bss-hover-animate="bounce"></i>
+                </div>                                             
+              </div>                            
+            </div>                                   
+          </div>
+          <div class="card C1">
+            <div>
+              <a href="#" class="Close">x<span class="tooltiptext">Cancel</span></a>
+              <div class="L1" >
+                <p class="Hname">Hospital Name</p>
+                <p class="SH">02:00-03:00 PM 05/06/2021</p>                                  
               </div>              
+              <div class="L2" >               
+                <div class="row">
+                  <div class="col-md-4">
+                    <p>Doctor:</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p>Name</p>
+                  </div>               
+                </div>
+                <div class="Seprt"></div>            
+                <div class="row">
+                  <div class="col-md-4">
+                    <p>Locatin:</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p>Bengaluru</p>
+                  </div>                
+                </div>
+                <div class="Seprt"></div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <p>Appointment Date:</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p>02:00-03:00 PM, 05/06/2021</p>
+                  </div>                
+                </div>
+                <div class="Seprt"></div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <p>Payment:</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p style="color: rgb(53, 236, 37);">Paid</p>
+                  </div>                
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#" style="color: rgb(71, 69, 204); font-size: 20px;">Visit Profile</a>
+                  </div>                                
+                </div>
+                <div class="Col" style="text-align: center;">
+                  <i class="fas fa-angle-up rotate-icon Collapse" data-bss-hover-animate="bounce"></i>
+                </div>                                             
+              </div>                            
             </div>                                   
           </div>
         </div>
@@ -170,41 +224,32 @@
 
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
-          this.classList.toggle("Style");
+          // this.classList.toggle("Style");
           var content = this.nextElementSibling;
-          
           if (content.style.display === "block") {
-            content.style.display = "none";
-            document.getElementsByClassName("SH")[0].style.display="block";
-            document.getElementsByClassName("Hname")[0].style.fontSize = "25px";
+            content.style.display = "block";            
           } else {
             content.style.display = "block";
-            document.getElementsByClassName("SH")[0].style.display="none";
-            document.getElementsByClassName("Hname")[0].style.fontSize = "35px";
+            // this.getElementsByClassName('Hname')[0].style.fontSize = "35px";
+          }
+        });
+      }
+
+      var coll1 = document.getElementsByClassName("Col");
+      var j;
+
+      for (j = 0; j < coll1.length; j++) {
+        coll1[j].addEventListener("click", function() {
+          var content1 = this.parentElement;
+          var head = content1.nextElementSibling;
+          if (content1.style.display === "block") {
+            content1.style.display = "none";
+          } else {
+            content1.style.display = "none";head.getElementsByClassName('Hname')[0].style.fontSize = "25px";
           }
         });
       }
       
-      // function show() { 
-      //   document.getElementsByClassName("Hname")[0].style.fontSize = "35px";       
-      //   document.getElementsByClassName("SH")[0].style.display="none";
-      //   document.getElementsByClassName("L2")[0].style.display = "block"; 
-      //   document.getElementsByClassName("Collapse")[0].style.display = "block";       
-      // }
-
-      // function hide(){
-      //   document.getElementsByClassName("Hname")[0].style.fontSize = "25px";
-      //   document.getElementsByClassName("SH")[0].style.display="block";
-      //   document.getElementsByClassName("L2")[0].style.display = "none";
-      //   document.getElementsByClassName("Collapse")[0].style.display = "none";         
-      // }
-      
-      // function show(myId){
-      //   let clk_id=myId.id;
-      //   clk_id.getElementsByClassName("SH")[0].style.display="none";
-      //   clk_id.getElementsByClassName("L2")[0].style.display = "block";
-      //   clk_id.getElementsByClassName("Collapse")[0].style.display = "block";
-      // }
     </script>
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
